@@ -1,3 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+
+typedef struct {
+    int fechadura;
+    char humor[2];
+    char descricao[25];
+    int dia;
+    int id;
+}diario;
+
+int gerarChave(){
+    int chave;
+    printf("Escolha sua senha númerica: ");
+    scanf("%d",&chave);
+    return chave;
+}
+
+mostrarEntrada(int n_entrada, diario *ptr){
+
+    int numero_de_busca = n_entrada;
+    int contador = 0;
     int endereco_da_entrada = 0;
     
     //buscar entrada
